@@ -1,10 +1,23 @@
-header {
-  display: flex;
+.header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.header h3 {
+  color: MediumAquamarine;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
 }
 
 nav li {
   display: inline-block;
+  align-self: flex-end;
 }
