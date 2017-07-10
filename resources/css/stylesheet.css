@@ -6,18 +6,14 @@
   align-items: center;
 }
 
-
-
 .header h3 {
   color: MediumAquamarine;
 }
 
 nav {
   display: flex;
-  align-items: flex-end;
 }
 
 nav li {
   display: inline-block;
-  align-self: flex-end;
 }
