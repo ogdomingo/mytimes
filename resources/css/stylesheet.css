@@ -1,3 +1,5 @@
+/* Header */
+
 header {
   display: flex;
   align-items: center;
@@ -30,4 +32,86 @@ nav {
 nav a {
   padding: 10px;
   color: black;
+}
+
+/* Columns */
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  padding-top: 30px;
+}
+
+.column.large {
+  width: 630px;
+
+  border: 1px solid black;
+}
+
+.column.medium {
+  width: 300px;
+
+  border: 1px solid black;
+}
+
+.column.small {
+  width: 240px;
+
+  border: 1px solid black;
+}
+
+.lead-story {
+  border: 1px solid black;
+}
+
+.text-content {
+  border: 1px solid black;
+}
+
+.narrative {
+  border: 1px solid black;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.news-bites {
+  border: 1px solid black;
+}
+
+/*Image contents*/
+
+.image-content{
+  border: 1px solid black;
+  height: 300px;
+  display: flex;
+}
+
+.image-content span {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.earth-spin.image-content {
+  background-image: url("../images/img-story-2.png");
+}
+
+.bearded-dude.image-content {
+  background-image: url("../images/img-story-3.png");
+}
+
+.lead-story .image-content {
+  display: block;
+  background-image: url("../images/img-story-main.png");
+  font-size: 40px;
+}
+
+.cat-ceo.image-content {
+  background-image: url("../images/img-story-1.png");
 }
