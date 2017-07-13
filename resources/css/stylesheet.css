@@ -36,10 +36,6 @@ nav a {
   padding-right: 5px;
 }
 
-div {
-  border: 1px solid black;
-}
-
 .content {
   display: flex;
   justify-content: space-around;
@@ -67,6 +63,18 @@ div {
 
 .column.small {
   width: 240px;
+}
+.column.large .story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.sub-story {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .column.small img {
