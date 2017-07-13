@@ -3,13 +3,15 @@
 header {
   display: flex;
   align-items: center;
+  z-index: 1;
+  position: fixed;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   height: 80px;
-  border-bottom: 1px solid black;
-  z-index: 1;
   width: 100%;
+  border-bottom: 1px solid black;
+  background-color: white;
 }
 
 .logo {
@@ -18,7 +20,6 @@ header {
   flex-grow: 1;
   color: MediumAquamarine;
   padding-left: 30px;
-  border: 1px solid black;
 }
 
 .logo img {
@@ -30,72 +31,66 @@ nav {
 }
 
 nav a {
-  padding: 10px;
   color: black;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-/* Columns */
+div {
+  border: 1px solid black;
+}
 
-.columns {
+.content {
   display: flex;
   justify-content: space-around;
+  padding-top: 80px;
 }
 
 .column {
-  padding-top: 30px;
-}
-
-.column.large {
-  width: 630px;
-
-  border: 1px solid black;
-}
-
-.column.medium {
-  width: 300px;
-
-  border: 1px solid black;
-}
-
-.column.small {
-  width: 240px;
-
-  border: 1px solid black;
-}
-
-.lead-story {
-  border: 1px solid black;
-}
-
-.text-content {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .narrative {
-  border: 1px solid black;
   font-family: Georgia;
   font-size: 17px;
   color: black;
 }
 
-.news-bites {
-  border: 1px solid black;
+.column.large {
+  width: 630px;
 }
 
-/*Image contents*/
-
-.image-content{
-  border: 1px solid black;
-  height: 300px;
-  display: flex;
+.column.medium {
+  width: 300px;
 }
 
-.image-content span {
+.column.small {
+  width: 240px;
+}
+
+.column.small img {
+  max-height: 240px;
+}
+
+/*Images*/
+
+.image-content {
   display: flex;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
+  height: 300px;
+  margin-top: 15px;
+}
+
+.lead-story span {
+  font-size: 40px;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/img-story-main.png");
 }
 
 .earth-spin.image-content {
@@ -104,12 +99,6 @@ nav a {
 
 .bearded-dude.image-content {
   background-image: url("../images/img-story-3.png");
-}
-
-.lead-story .image-content {
-  display: block;
-  background-image: url("../images/img-story-main.png");
-  font-size: 40px;
 }
 
 .cat-ceo.image-content {
